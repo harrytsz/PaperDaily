@@ -7,7 +7,7 @@
 **研究方向:** 目标检测、GAN.
 
 
-![img](https://image.jiqizhixin.com/uploads/editor/0da47236-692c-48e8-b9b6-0454180237e0/640.png)
+![!\[img\](https://image.jiqizhixin.com/uploads/editor/0da47236-692c-48e8-b9b6-0454180237e0/640.png)][1]
 
 
 **研究动机:** 这是一篇发表于 CVPR 2019 的关于显著性目标检测的 paper，在 U 型结构的特征网络中，高层富含语义特征捕获的位置信息在自底向上的传播过程中可能会逐渐被稀释，另外卷积神经网络的感受野大小与深度是不成正比的。
@@ -18,7 +18,7 @@ https://github.com/backseason/PoolNet
 
 模型架构
 
-![img](https://image.jiqizhixin.com/uploads/editor/e861ffe8-9139-46b8-9ef6-853a2e489437/640.png)
+![image_1dd2ou06t1fm91srd1odv1grn2tbm.png-358.7kB][2]
 
 ## 两个模块
 
@@ -30,7 +30,7 @@ https://github.com/backseason/PoolNet
 
 其实这部分论文说得并不是很清晰，没有说 GGM 的详细结构，我们可以知道 PPM [7] 的结构如下：
 
-![img](https://image.jiqizhixin.com/uploads/editor/9b8e4e5b-7048-452f-9280-13b184e44068/640.png)
+![!\[img\](https://image.jiqizhixin.com/uploads/editor/9b8e4e5b-7048-452f-9280-13b184e44068/640.png)][3]
 
 该 PPM 模块融合了 4 种不同金字塔尺度的特征，第一行红色是最粗糙的特征–全局池化生成单个 bin 输出，后面三行是不同尺度的池化特征。为了保证全局特征的权重，如果金字塔共有 N 个级别，则在每个级别后使用 1×1 的卷积将对于级别通道降为原本的 1/N。再通过双线性插值获得未池化前的大小，最终 concat 到一起。 
 
@@ -42,7 +42,7 @@ FAM（特征整合模块）
 
 特征整合模块也是使用了池化技巧的模块，如下图，先把 GGM 得到的高层语义与该级特征分别上采样之后横向连接一番得到 FAM 的输入 b，之后采取的操作是先把 b 用 {2,4,8} 的三种下采样得到蓝绿红特征图然后 avg pool（平均池化）再上采样回原来尺寸，最后蓝绿红紫（紫色是 FAM 的输入 b）四个分支像素相加得到整合后的特征图。
 
-![img](https://image.jiqizhixin.com/uploads/editor/1389eb63-9b89-45bf-9cb6-e97ee107abc4/640.png)
+![!\[img\](https://image.jiqizhixin.com/uploads/editor/1389eb63-9b89-45bf-9cb6-e97ee107abc4/640.png)][4]
 
 ### FAM 有以下两个优点： 
 
@@ -54,7 +54,7 @@ FAM（特征整合模块）
 
 作者就是因为这样才会提出 FAM，进行特征整合，先把特征用不同倍数的下采样，池化之后，再用不同倍数的上采样，最后叠加在一起。因为单个高倍数上采样容易导致失真，所以补救措施就是高倍数上采样之后，再下采样，再池化上采样平均下来可以弥补错误。
 
-![img](https://image.jiqizhixin.com/uploads/editor/f102ad62-39c1-41c0-934c-b1c55945c754/640.png)
+![!\[img\](https://image.jiqizhixin.com/uploads/editor/f102ad62-39c1-41c0-934c-b1c55945c754/640.png)][5]
 
 上图就是为了说明 FAM 的优点的，经过高倍上采样之后的图像（b）和（d）容易引入许多杂质，致使边缘不清晰，但是经过 FAM 模块之后的特征图就能降低混叠效应。
 
@@ -64,17 +64,17 @@ FAM（特征整合模块）
 
 以下是文章方法跟目前 state-of-the-arts 的方法的对比效果，绿框是 GT，红框是本文效果。可以看到无论在速度还是精度上都有很大的优势。
 
-![img](https://image.jiqizhixin.com/uploads/editor/8b1f0599-a28c-4af0-9de4-30a2b712409f/640.png)
+![!\[img\](https://image.jiqizhixin.com/uploads/editor/8b1f0599-a28c-4af0-9de4-30a2b712409f/640.png)][6]
 
-![img](https://image.jiqizhixin.com/uploads/editor/b7d2f2e7-ecea-448a-8851-4a6a802fc4d6/640.png)
+![!\[img\](https://image.jiqizhixin.com/uploads/editor/b7d2f2e7-ecea-448a-8851-4a6a802fc4d6/640.png)][7]
 
-![img](https://image.jiqizhixin.com/uploads/editor/8404eda0-6049-4a5e-a8be-6fa463d68225/640.png)
+![!\[img\](https://image.jiqizhixin.com/uploads/editor/8404eda0-6049-4a5e-a8be-6fa463d68225/640.png)][8]
 
 论文还针对三个改进的技术 PPM、GGFs 和 FAMs 的不同组合做了实验，(a) 是原图，(b) 是 Ground truth，(c) 是 FPN 的结果，(d) 是 FPN+FAMs，(e) 是 FPN+PPM，(f) 是 FPN+GGM，(g) 是 FPN+GGM+FAMs。
 
-![img](https://image.jiqizhixin.com/uploads/editor/c3fc1a1f-a488-467e-b172-619f941b26f2/640.png)
+![!\[img\](https://image.jiqizhixin.com/uploads/editor/c3fc1a1f-a488-467e-b172-619f941b26f2/640.png)][9]
 
-![img](https://image.jiqizhixin.com/uploads/editor/71bbc6f4-2e86-4a82-8767-1f1fc88a2a1d/640.png)
+![!\[img\](https://image.jiqizhixin.com/uploads/editor/71bbc6f4-2e86-4a82-8767-1f1fc88a2a1d/640.png)][10]
 
 ## 总结
 
@@ -109,3 +109,15 @@ FAM（特征整合模块）
 [13]. Lijun Wang, Huchuan Lu, Yifan Wang, Mengyang Feng, Dong Wang, Baocai Yin, and Xiang Ruan. Learning to detect salient objects with image-level supervision. In CVPR, pages 136–145, 2017. 5, 7, 8.
 
 [14]. Saining Xie and Zhuowen Tu. Holistically-nested edge detection. In ICCV, pages 1395–1403, 2015. 6.
+
+
+  [1]: http://static.zybuluo.com/harrytsz/9ucb9mzitidkb4hwfqz2ws8x/image_1dd2ot8q4vte1iht1dqm10km16ah9.png
+  [2]: http://static.zybuluo.com/harrytsz/2mu5wi88k9avs4840vtvs2ga/image_1dd2ou06t1fm91srd1odv1grn2tbm.png
+  [3]: http://static.zybuluo.com/harrytsz/eys1eczwfvpol13g22mmpi62/image_1dd2oui9c1v191ojukfhmeupve13.png
+  [4]: http://static.zybuluo.com/harrytsz/o0ivhhcw31x3kh7k9czldoy3/image_1dd2ov1kupn25pgcne1v541en71g.png
+  [5]: http://static.zybuluo.com/harrytsz/lze10fmm9ma5ik3h471fri79/image_1dd2ovegl15hm1ftn1mj27a810851t.png
+  [6]: http://static.zybuluo.com/harrytsz/2qgg2u25r8g2adi4akr7fb2t/image_1dd2ovu3fcl81olejp0h4b12rv2a.png
+  [7]: http://static.zybuluo.com/harrytsz/1yq352umjdmawgyoc3hfvour/image_1dd2p08s88571q9110cne85ed2n.png
+  [8]: http://static.zybuluo.com/harrytsz/glvpazgc84b4tqfj1fev15tv/image_1dd2p0j4iphl1gourbf1mud1p4u34.png
+  [9]: http://static.zybuluo.com/harrytsz/031tgsk4s61vzqs6hiox62oq/image_1dd2p129u3i9bsj19onqb5mub3h.png
+  [10]: http://static.zybuluo.com/harrytsz/hhwwbxbsv2c67rsbym83eubo/image_1dd2p1aoqtn91k1si7b5li104b3u.png
