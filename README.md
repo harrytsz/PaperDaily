@@ -25,3 +25,13 @@
 
 **Note:** Paper about Deep Learning、NLP、CV and so on.
 
+### Structure:
+
+Papers:
+|------- Computer Vision:
+|
+|------- Deep Learning:
+|
+|------- Machine Learning:
+|
+|------- NLP:
