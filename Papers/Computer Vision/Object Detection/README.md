@@ -52,6 +52,8 @@ arXiv：https://arxiv.org/abs/1901.03278
 
 解读：港中大-商汤联合实验室等提出：Guided Anchoring: 物体检测器也能自己学 Anchor
 
+![img](https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oVCzzqia0xiasUP7priaI8OWGPibmJ7IAERicbdiaHKceGXAicNfHoibB5s1prLh5QRLybUsKTx21SLktGs6Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
 
 【3】Generalized Intersection over Union: A Metric and A Loss for Bounding Box Regression
 
@@ -65,6 +67,7 @@ arXiv：https://arxiv.org/abs/1902.09630
 
 解读：CVPR2019 | 目标检测新文：Generalized Intersection over Union
 
+![img](https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oVCzzqia0xiasUP7priaI8OWGPyMtX2scTLysVTn6DR3m2Lf6FYGVv25VKDvrRzK4fIjySialic1sgzasw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 【4】Stereo R-CNN based 3D Object Detection for Autonomous Driving
 
@@ -78,6 +81,7 @@ arXiv：https://arxiv.org/abs/1902.09738
 
 解读：https://zhuanlan.zhihu.com/p/58077936
 
+![img](https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oVCzzqia0xiasUP7priaI8OWGPQXEvWiaySibJdJCQv4w8aaT6dZoC4Nn8tRicy7K35BiamicfMibm8HTOJmrA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 【5】ROI-10D: Monocular Lifting of 2D Detection to 6D Pose and Metric Shape
 
@@ -88,6 +92,8 @@ Date：20190226
 Author：慕尼黑工业大学&丰田研究所
 
 arXiv：https://arxiv.org/abs/1812.02781v2
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oVCzzqia0xiasUP7priaI8OWGPTVwJclb6PaHL9olbia4b5W1MoFzFyib6sFK51KEWThnqQUBqsFLJnJJQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 【6】Feature Selective Anchor-Free Module for Single-Shot Object Detection
 
@@ -101,6 +107,7 @@ arXiv：https://arxiv.org/abs/1903.00621
 
 解读：CVPR2019 | CMU提出Single-Shot目标检测最强算法：FSAF
 
+![img](https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oVCzzqia0xiasUP7priaI8OWGP8KK9zAicicnVMS22HyvX8p7tZf6nibHlLuUhIM9qibWKdSvYFuPPz2xTKg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 【7】Strong-Weak Distribution Alignment for Adaptive Object Detection
 
@@ -112,6 +119,7 @@ Author：波士顿大学院&东京大学等
 
 arXiv：https://arxiv.org/abs/1812.04798
 
+![img](https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oVCzzqia0xiasUP7priaI8OWGPtSBaHRqsqS0LQ3CdBLAMEn6O6vSNR6Qf5icwNEACD7c7YDxdLtevp5Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 【8】Pseudo-LiDAR from Visual Depth Estimation: Bridging the Gap in 3D Object Detection for Autonomous Driving
 
@@ -123,6 +131,7 @@ Author：康奈尔大学
 
 arXiv：https://arxiv.org/abs/1812.07179v3
 
+![img](https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oVCzzqia0xiasUP7priaI8OWGPWUmRdH6Wb0oQcEjSnSM2uCG6TSKO7LMd7ONaItjXnQ2niafQHRSL0Gg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 【9】Few-shot Adaptive Faster R-CNN
 
@@ -134,6 +143,7 @@ Author：新加坡国立大学&华为诺亚方舟实验室
 
 arXiv：https://arxiv.org/abs/1903.09372
 
+![img](https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oVCzzqia0xiasUP7priaI8OWGP10TE8DVbrrYzoQoGajRou2M0kh3zLFX2icdpeZ9jlMRfoyhzwDhcxfw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 【10】Bounding Box Regression with Uncertainty for Accurate Object Detection
 
@@ -149,7 +159,7 @@ github：https://github.com/yihui-he/KL-Loss
 
 注：原Softer NMS的升级版：《Softer-NMS: Rethinking Bounding Box Regression for Accurate Object Detection》
 
-
+![img](https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oVCzzqia0xiasUP7priaI8OWGPKlU1vDUicCGsd4q1ltjloqHbvyBWoJxBJaA691Na4JLXtyZSZx8FfFQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 
 【11】GS3D: An Efficient 3D Object Detection Framework for Autonomous Driving
@@ -162,7 +172,7 @@ Author：中科院&旷视科技
 
 arXiv：https://arxiv.org/abs/1903.10955
 
-
+![img](https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oVCzzqia0xiasUP7priaI8OWGPShLaNTOfdes1icAIkibnQcibRlxbPAs7o2QDLcftrXZHv9oria1LX3Uusw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 
 
@@ -180,11 +190,7 @@ arXiv：None
 
 github：https://github.com/OceanPang/Libra_R-CNN
 
-CVer目标检测交流群
 
-
-
-扫码添加CVer助手，可申请加入CVer-目标检测交流群。一定要备注：目标检测+地点+学校/公司+昵称（如目标检测+上海+上交+卡卡）
 
 
 
