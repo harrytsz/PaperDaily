@@ -27,11 +27,11 @@
 
 ### Structure:
 
-Papers:
-|------- Computer Vision:      
+Papers:     
+|--- Computer Vision:      
 |       
-|------- Deep Learning:      
+|--- Deep Learning:      
 |      
-|------- Machine Learning:       
+|--- Machine Learning:       
 |       
-|------- NLP:      
+|--- NLP:      
