@@ -28,7 +28,7 @@ https://github.com/backseason/PoolNet
 
 因此作者提出了 GGM 模块，GGM 其实是 PPM（Pyramid Pooling module，金字塔池化模块）的改进并且加上了一系列的 GGFs（Global Guiding Flows，全局引导流），这样做的好处是，在特征图上的每层都能关注到显著物体，另外不同的是，GGM 是一个独立的模块，而 PPM 是在 U 型架构中，在基础网络（backbone）中参与引导全局信息的过程。 
 
-其实这部分论文说得并不是很清晰，没有说 GGM 的详细结构，我们可以知道 PPM [7] 的结构如下：
+其实这部分论文说得并不是很清晰，没有说 GGM 的详细结构，我们可以知道 PPM /[7] 的结构如下：
 
 ![!\[img\](https://image.jiqizhixin.com/uploads/editor/9b8e4e5b-7048-452f-9280-13b184e44068/640.png)][3]
 
@@ -60,7 +60,7 @@ FAM（特征整合模块）
 
 ## 实验结果
 
-论文在常用的 6 种数据集上做了实验，有 ECSSD [8], PASCALS [9], DUT-OMRON [10], HKU-IS [11], SOD [12] 和 DUTS [13], 使用二值交叉熵做显著性检测，平衡二值交叉熵（balanced binary cross entropy）[14] 作为边缘检测（edge detection）。
+论文在常用的 6 种数据集上做了实验，有 ECSSD \[8], PASCALS /[9], DUT-OMRON [10], HKU-IS [11], SOD [12] 和 DUTS [13], 使用二值交叉熵做显著性检测，平衡二值交叉熵（balanced binary cross entropy）[14] 作为边缘检测（edge detection）。
 
 以下是文章方法跟目前 state-of-the-arts 的方法的对比效果，绿框是 GT，红框是本文效果。可以看到无论在速度还是精度上都有很大的优势。
 
