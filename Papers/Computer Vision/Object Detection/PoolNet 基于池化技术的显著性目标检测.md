@@ -80,7 +80,9 @@ FAM（特征整合模块）
 
 该 paper 提出了两种基于池化技术的模块 GGM（全局引导模块）和 FAM（特征整合模块），改进 FPN 在显著性检测的应用，而且这两个模块也能应用在其他金字塔模型中，具有普遍性，但是 FAM 的整合过程我认为有点像是用平均中和了上采样带来的混叠效应，但是不够优雅，先下采样池化再上采样带来的损失可能代价太大。
 
+
 ## 参考文献
+
 
 [1]. Hengshuang Zhao, Jianping Shi, Xiaojuan Qi, Xiaogang Wang, and Jiaya Jia. Pyramid scene parsing network. In CVPR, 2017. 1, 3. 
 
